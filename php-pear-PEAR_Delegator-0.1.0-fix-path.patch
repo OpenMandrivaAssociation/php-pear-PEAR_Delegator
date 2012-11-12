@@ -1,0 +1,39 @@
+diff -Naur -x '*~' php-pear-PEAR_Delegator-0.1.0/package.xml php-pear-PEAR_Delegator-0.1.0-fix-path/package.xml
+--- php-pear-PEAR_Delegator-0.1.0/package.xml	2005-04-09 06:18:40.000000000 +0200
++++ php-pear-PEAR_Delegator-0.1.0-fix-path/package.xml	2009-11-21 12:21:27.000000000 +0100
+@@ -19,7 +19,7 @@
+     <state>beta</state>
+     <notes>Though categorized as beta, this code should be quite stable. However, semantics and organization may change in this stage.</notes>
+     <filelist>
+-      <file role="php" baseinstalldir="PEAR" md5sum="be70be27a6fbf518c44a086a611f004f" name="Delegator.php"/>
++      <file role="php" baseinstalldir="PEAR" md5sum="15e405230dd3388c657f86b2174fe5c0" name="Delegator.php"/>
+       <file role="php" baseinstalldir="PEAR" md5sum="36fbc0b92cc0925be521a650c990c304" name="Delegator/DelegatorExtensions.php"/>
+       <file role="php" baseinstalldir="PEAR" md5sum="5f8a455376de3e1376834bcfb0f591a0" name="Delegator/DelegatorExceptions.php"/>
+       <file role="php" baseinstalldir="PEAR" md5sum="6bed72e602c9032f5c806abafc7d3918" name="Delegator/DelegatorInternals.php"/>
+diff -Naur -x '*~' php-pear-PEAR_Delegator-0.1.0/PEAR_Delegator-0.1.0/Delegator.php php-pear-PEAR_Delegator-0.1.0-fix-path/PEAR_Delegator-0.1.0/Delegator.php
+--- php-pear-PEAR_Delegator-0.1.0/PEAR_Delegator-0.1.0/Delegator.php	2005-04-09 05:56:56.000000000 +0200
++++ php-pear-PEAR_Delegator-0.1.0-fix-path/PEAR_Delegator-0.1.0/Delegator.php	2009-11-21 12:20:55.000000000 +0100
+@@ -36,12 +36,12 @@
+ /**
+  * This includes the exceptions thrown.
+  */
+-require_once 'Delegator/DelegatorExceptions.php';
++require_once 'PEAR/Delegator/DelegatorExceptions.php';
+ 
+ /**
+  * This includes highly internal parts.
+  */
+-require_once 'Delegator/DelegatorInternals.php';
++require_once 'PEAR/Delegator/DelegatorInternals.php';
+ 
+ /**
+  * Base class for objects that allow delegation.
+@@ -295,7 +295,7 @@
+      public static function addExtensions()
+      {
+         if (!self::$_addExtensions) {
+-            require_once 'Delegator/DelegatorExtensions.php';
++            require_once 'PEAR/Delegator/DelegatorExtensions.php';
+             self::$_addExtensions = true;
+         }
+         
