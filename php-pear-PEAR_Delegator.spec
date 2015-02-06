@@ -4,7 +4,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	0.1.0
-Release:	15
+Release:	16
 Summary:	Delegation for PHP
 License:	PHP License
 Group:		Development/PHP
