@@ -8,7 +8,7 @@ Release:	16
 Summary:	Delegation for PHP
 License:	PHP License
 Group:		Development/PHP
-URL:		http://pear.php.net/package/PEAR_Delegator/
+URL:		https://pear.php.net/package/PEAR_Delegator/
 Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tar.bz2
 Patch0:		%{name}-%{version}-fix-path.patch
 Requires(post): php-pear
